@@ -18,13 +18,5 @@ services:
       - WEBHOOK_SECRET=${WEBHOOK_SECRET}
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.makhoof-insta.rule=Host(`makhoof.chori.cyou`)"
-      - "traefik.http.routers.makhoof-insta.entrypoints=https"
-      - "traefik.http.routers.makhoof-insta.tls=true"
-      - "traefik.http.routers.makhoof-insta.tls.certresolver=cloudflare"
-      - "traefik.http.services.makhoof-insta.loadbalancer.server.port=3000"
-      - "traefik.http.routers.makhoof-insta-http.rule=Host(`makhoof.chori.cyou`)"
-      - "traefik.http.routers.makhoof-insta-http.entrypoints=http"
-      - "traefik.http.routers.makhoof-insta-http.middlewares=makhoof-insta-redirect"
-      - "traefik.http.middlewares.makhoof-insta-redirect.redirectscheme.scheme=https"
-      - "traefik.http.middlewares.makhoof-insta-redirect.redirectscheme.permanent=true"
+      - "traefik.http.routers.whoami.rule=Host(`makhoof.chori.cyou`)"
+      - "traefik.http.routers.whoami.entrypoints=http"
