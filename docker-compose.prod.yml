@@ -18,5 +18,5 @@ services:
       - WEBHOOK_SECRET=${WEBHOOK_SECRET}
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.whoami.rule=Host(`makhoof.chori.cyou`)"
-      - "traefik.http.routers.whoami.entrypoints=http"
+      - "traefik.http.routers.makhoof-insta.rule=Host(`makhoof.chori.cyou`)"
+      - "traefik.http.routers.makhoof-insta.entrypoints=http"
