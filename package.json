@@ -1,0 +1,28 @@
+{
+  "name": "makhoof-insta",
+  "version": "1.0.0",
+  "description": "Bridge that receives Instagram webhook events and forwards media to a Telegram group.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
+  },
+  "keywords": [
+    "instagram",
+    "telegram",
+    "bot",
+    "bridge"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "form-data": "^4.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
